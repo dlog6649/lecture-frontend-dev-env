@@ -6,9 +6,9 @@ const app = express();
 
 app.use(morgan("dev"));
 
-// app.use(express.static(path.join(__dirname, "../dist")));
+app.use(express.static(path.join(__dirname, "../dist")));
 
-const port = process.env.PORT || 8081;
+const port = process.env.PORT || 8082;
 const keywords = [
   { keyword: "이탈리아" },
   { keyword: "세프의요리" },
